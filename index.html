@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ontdek het Verschil tussen Front-End en Back-End</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <h1>Ontdek het Verschil tussen Front-End en Back-End</h1>
+    </div>
+  </header>
+  <main>
+    <section id="frontend">
+      <h2>Front-End</h2>
+      <p>De Front-End is wat je ziet en gebruikt op een website. Dit omvat de lay-out, het ontwerp en hoe je ermee werkt.</p>
+      <p>De Front-End wordt gemaakt met HTML, CSS en JavaScript.</p>
+      <div id="html-example">
+        <button onclick="showHTML()">Bekijk HTML Voorbeeld</button>
+        <div id="html-content" class="hidden">
+          <p>HTML: De basisstructuur van een webpagina.</p>
+        </div>
+        <br><br>
+      </div>
+      <div id="css-example">
+        <input type="range" min="10" max="30" value="16" step="1" oninput="changeCSS(this.value)">
+        <p>CSS: Stijl en uiterlijk.</p>
+      </div>
+      <div id="svg-example" class="svg-container">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="100" height="100">
+          <circle cx="12" cy="12" r="10" fill="#ff5722"/>
+        </svg>
+        <p>Klik op de cirkel om de kleur te veranderen.</p>
+      </div>
+    </section>
+    <section id="backend">
+      <h2>Back-End</h2>
+      <p>De Back-End is het verborgen deel van een website dat werkt achter de schermen. Het verwerkt verzoeken en levert dynamische inhoud.</p>
+      <p>De Back-End bestaat uit servers, applicaties en databases.</p>
+      <button onclick="fetchData()">Doe een AJAX-verzoek</button>
+      <div id="ajax-response" class="hidden"></div>
+    </section>
+    <section id="verschillen">
+      <h2>De Verschillen tussen Front-End en Back-End</h2>
+      <p>De Front-End en Back-End zijn beide belangrijk voor websites, maar hebben verschillende taken.</p>
+      
+      <div>
+        <h3>Front-End:</h3>
+        <ul>
+          <li>Wat je direct ziet en gebruikt op een website.</li>
+          <li>Lay-out, ontwerp en gebruikservaring.</li>
+          <li>Gemaakt met HTML, CSS en JavaScript.</li>
+          <li>Werkt in je webbrowser.</li>
+        </ul>
+      </div>
+      
+      <div>
+        <h3>Back-End:</h3>
+        <ul>
+          <li>Werkt achter de schermen.</li>
+          <li>Verwerkt verzoeken en levert inhoud.</li>
+          <li>Bestaat uit servers, applicaties en databases.</li>
+          <li>Gemaakt met verschillende programmeertalen.</li>
+        </ul>
+      </div>
+
+      <p>Het begrijpen van deze verschillen helpt ontwikkelaars om beter samen te werken.</p>
+    </section>
+    
+    <section id="quiz">
+      <h2>Test je Kennis</h2>
+      <div id="quiz-container">
+        <div id="question-container">
+          <p id="question">Wat is het verschil tussen Front-End en Back-End?</p>
+        </div>
+        <div id="answers-container">
+          <button onclick="checkAnswer(true)">Front-End is wat de gebruiker ziet; Back-End is de server-side logica.</button>
+          <button onclick="checkAnswer(false)">Front-End is de server-side logica; Back-End is wat de gebruiker ziet.</button>
+            <br>
+          <button onclick="checkAnswer(true)">HTML staat voor HyperText Markup Language.</button>
+          <button onclick="checkAnswer(false)">CSS wordt gebruikt voor het maken van interactieve elementen op een website.</button>
+          <br>
+          <button onclick="checkAnswer(true)">CSS wordt gebruikt voor het stylen en opmaken van webpagina's.</button>
+          <button onclick="checkAnswer(false)">JavaScript wordt gebruikt voor het stylen van webpagina's.</button>
+          <br>
+          <button onclick="checkAnswer(false)">JavaScript wordt alleen gebruikt voor server-side scripting.</button>
+        </div>
+        <p id="result" class="hidden"></p>
+      </div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

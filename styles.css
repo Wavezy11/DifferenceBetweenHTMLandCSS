@@ -1,0 +1,113 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2; 
+}
+
+header {
+  background-color: #4CAF50; 
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+main {
+  max-width: 90%; 
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+h1, h2 {
+  color: #333;
+}
+
+p {
+  color: #666; 
+  line-height: 1.5;
+}
+
+.hidden {
+  display: none;
+}
+
+
+#html-example, #css-example, #svg-example {
+  margin-top: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff; 
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3; 
+}
+
+input[type="range"] {
+  width: 100%;
+  margin-top: 5px;
+}
+
+/* AJAX-respons */
+#ajax-response {
+  margin-top: 20px;
+}
+
+/* SVG-voorbeeld */
+.svg-container {
+  text-align: center;
+}
+
+#svg-example svg {
+  transition: fill 0.3s ease;
+  cursor: pointer;
+}
+
+#svg-example svg:hover {
+  fill: #ffcc00; 
+}
+
+
+#quiz-container {
+  margin-top: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+
+#answers-container button {
+  display: block;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #4CAF50; 
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#answers-container button:hover {
+  background-color: #45a049; 
+}
+
+
+#result {
+  margin-top: 20px;
+  font-weight: bold;
+}
